@@ -169,7 +169,7 @@ public class HashTable {
                     temp = temp.prev.prev;
                     temp.next.next = null;
                 }
-                entries[hash] = temp; //Error
+                entries[hash] = temp;
             }
             //decrementamos items al eliminar un valor
             --ITEMS;
