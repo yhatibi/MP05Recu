@@ -56,7 +56,7 @@ class HashTableTest {
         hashTable.drop("16");
 
         Assertions.assertEquals(2, hashTable.count());
-        Assertions.assertNull(hashTable.get("27"));
+        Assertions.assertEquals("27",hashTable.get("27"));
     }
 
     //Primer error, nunca se incrementan los elementos insertados de este metodo
