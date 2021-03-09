@@ -1,0 +1,18 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î…éß
+
+java:S1319¾"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Á†ó®8½„œ“/
+R
+java:S3740Ï"/Provide the parametrized type for this generic.(‡ã¥şüÿÿÿÿ8½„œ“/
+M
+java:S3740Ğ"/Provide the parametrized type for this generic.(ÕÎÖ†8½„œ“/
+:
+java:S1643Ú"Use a StringBuilder instead.(± ÒÔ8½„œ“/
+p	java:S116"ORename this field "SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÎÆúÿÿÿÿ8½„œ“/
+q	java:S116"PRename this field "ITEMS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹áÄüøÿÿÿÿ8½„œ“/
+p
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Á†ó®8½„œ“/
+Y	java:S125Á"<This block of commented-out lines of code should be removed.( Ê¼ö8½„œ“/
+V	java:S106„"9Replace this use of System.out or System.err by a logger.(ŒïÍ8½„œ“/
+[	java:S106Š"9Replace this use of System.out or System.err by a logger.(Úº¢Øøÿÿÿÿ8½„œ“/
+U	java:S106”"9Replace this use of System.out or System.err by a logger.(‚š‰18½„œ“/
