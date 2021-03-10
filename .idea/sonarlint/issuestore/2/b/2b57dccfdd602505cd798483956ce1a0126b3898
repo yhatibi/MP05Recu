@@ -1,0 +1,20 @@
+
+K
+java:S3740…"/Provide the parametrized type for this generic.(‡ã¥þüÿÿÿÿ
+R	java:S125÷"<This block of commented-out lines of code should be removed.( Ê¼ö
+‡
+java:S1319ô"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Á†ó®
+3
+java:S1643"Use a StringBuilder instead.(± ÒÔ
+F
+java:S3740†"/Provide the parametrized type for this generic.(ÕÎÖ†
+Q	java:S1259"<This block of commented-out lines of code should be removed.(’Þïœ
+W	java:S125Œ"<This block of commented-out lines of code should be removed.(»’Ë¦ýÿÿÿÿ
+Q	java:S125#"<This block of commented-out lines of code should be removed.(ÇÐŸÎ
+j	java:S116"PRename this field "ITEMS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹áÄüøÿÿÿÿ
+i	java:S116"ORename this field "SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÎÆúÿÿÿÿ
+Q	java:S125i"<This block of commented-out lines of code should be removed.(ÌñÞÕ
+i
+java:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Á†ó®
+Y	java:S125Ÿ"<This block of commented-out lines of code should be removed.(’Þïœ8¦üåÅ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýâÒê

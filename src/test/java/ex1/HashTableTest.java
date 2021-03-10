@@ -1,5 +1,6 @@
 package ex1;
 
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +24,6 @@ class HashTableTest {
 
         //compruebo el valor de esa clave introducida
         Assertions.assertEquals("8", hashTable.get("14"));
-
         //compruebo que las claves repetidas se sobreescriben
         Assertions.assertEquals("\n bucket[1] = [12, 57]\n bucket[3] = [3, 4] -> [14, 8]\n bucket[8] = [8, 10]", hashTable.toString());
     }
@@ -47,6 +47,8 @@ class HashTableTest {
     @Test
     public void TestMetodoDrop() {
         HashTable hashTable = new HashTable();
+        // bucket[5] = [5, 5] -> [16, 16] -> [27, 27]
+
         hashTable.put("5", "5");
         hashTable.put("16", "16");
         hashTable.put("27", "27");
@@ -56,7 +58,7 @@ class HashTableTest {
         hashTable.drop("16");
 
         Assertions.assertEquals(2, hashTable.count());
-        Assertions.assertEquals("27",hashTable.get("27"));
+        Assertions.assertEquals("27", hashTable.get("27"));
     }
 
     //Primer error, nunca se incrementan los elementos insertados de este metodo

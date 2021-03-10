@@ -156,7 +156,7 @@ public class HashTable {
             if (temp.prev == null && temp.next == null)
                 entries[hash] = null;              //esborrar element únic (no col·lissió)
             else {
-                //ahora comprobamos el caso en que haya mas elementos, si el anterior es null ahora el siguiente vale temp y los desplazamos hacia detrás
+                //ahora comprobamos el caso en que haya mas elementos, si el anterior es null ahora el siguiente vale temp y el anterior lo ponemos a null
                 if (temp.prev == null) {
                     temp = temp.next;
                     temp.prev = null;
@@ -165,7 +165,7 @@ public class HashTable {
                 } else if (temp.next != null) {
                     temp = temp.prev;
                     temp.next = temp.next.next; //esborrem temp, per tant actualitzem l'anterior al següent
-                } else { //Error
+                } else {
                     temp = temp.prev.prev;
                     temp.next.next = null;
                 }

@@ -1,6 +1,5 @@
 package ex2;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import ex3.HashEntry;
 import org.junit.jupiter.api.Assertions;

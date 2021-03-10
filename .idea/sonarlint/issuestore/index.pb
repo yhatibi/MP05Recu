@@ -7,3 +7,27 @@ U
 %src/main/java/original/HashTable.java,1\9\194d65334a7a43ae71f0c9e23bb4ead3c881b30a
 O
 src/main/java/ex1/Enunciat.java,5\5\55e6fec85070218ba58b0dc5c0dc14b5ee9ead6e
+K
+.github/workflows/maven.yml,c\7\c709f6995f23dae0da365bff70068f8288fa89e0
+K
+src/main/java/ex2/Main.java,7\d\7d0bf6565a5cc7864b2513c3c02a0504212f4848
+P
+ src/main/java/ex2/HashTable.java,1\d\1deff2cee97d3d9c92d52fd4ce2c8fb258a234d8
+P
+ src/main/java/ex2/HashEntry.java,4\4\4465729eb057fc898a3d423d6d5e202a629f04e2
+O
+src/main/java/ex2/Enunciat.java,7\1\714a4cf8802dcba0bd9c3e35afb4b936fc58465a
+K
+src/main/java/ex3/Main.java,2\5\250702c8730433c31956fdc064c7bd9ec9250970
+O
+src/main/java/ex3/Enunciat.java,8\9\89daf8bafadb010e0245098e25b1fa94960ed4a7
+P
+ src/main/java/ex3/HashTable.java,2\b\2b57dccfdd602505cd798483956ce1a0126b3898
+P
+ src/main/java/ex3/HashEntry.java,8\e\8ef7adbf35cf281664603f49e1a72b72ad1b3bc0
+T
+$src/test/java/ex1/HashTableTest.java,4\e\4e903a15e2a7590f8ea6d2444784c375ef2ba92c
+T
+$src/test/java/ex2/HashTableTest.java,d\a\da64ababa76c7bf9139c2a438cc7ba88988ed1df
+T
+$src/test/java/ex3/HashTableTest.java,7\e\7e09faf8d702eca61abe8056574dc9d35fe52d10

@@ -1,15 +1,15 @@
 
-‡
-java:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Á†ó®
-K
-java:S3740ª"/Provide the parametrized type for this generic.(‡ã¥şüÿÿÿÿ
-F
-java:S3740«"/Provide the parametrized type for this generic.(ÕÎÖ†
 3
 java:S1643µ"Use a StringBuilder instead.(± ÒÔ
-i	java:S116"ORename this field "SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÎÆúÿÿÿÿ
-j	java:S116"PRename this field "ITEMS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹áÄüøÿÿÿÿ
-i
-java:S3776™"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Á†ó®
+K
+java:S3740ª"/Provide the parametrized type for this generic.(‡ã¥şüÿÿÿÿ
 R	java:S125œ"<This block of commented-out lines of code should be removed.( Ê¼ö
 N	java:S106å"9Replace this use of System.out or System.err by a logger.(‚š‰1
+j	java:S116"PRename this field "ITEMS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹áÄüøÿÿÿÿ
+F
+java:S3740«"/Provide the parametrized type for this generic.(ÕÎÖ†
+i
+java:S3776™"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Á†ó®
+i	java:S116"ORename this field "SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÎÆúÿÿÿÿ
+‡
+java:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Á†ó®

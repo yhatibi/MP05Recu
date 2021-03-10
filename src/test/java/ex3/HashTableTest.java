@@ -1,7 +1,5 @@
 package ex3;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -125,7 +123,7 @@ class HashTableTest {
         hashTable.put("11", "21");
         hashTable.put("11", "68");
 
-
+        System.out.println(hashTable.toString());
         Assertions.assertEquals("\n bucket[0] = [00, 123]\n bucket[32] = [11, 68]\n bucket[48] = [0, 2]\n bucket[49] = [1, 0]\n bucket[50] = [2, 0]", hashTable.toString());
     }
 }
