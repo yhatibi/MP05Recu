@@ -47,7 +47,7 @@ public class HashTable {
 //        }
 //    }
 
-    //primer error, no incrementa items
+    //error 1: ITEMS++
     public void put(String key, String value) {
         int hash = getHash(key);
         final HashEntry hashEntry = new HashEntry(key, value);
@@ -55,13 +55,11 @@ public class HashTable {
         if (entries[hash] == null) {
             entries[hash] = hashEntry;
         } else {
-            //si hay una colision, miramos el primer elemento, si el primer elemento tine la misma clave, se machaca el valor y se sale del metodo
             HashEntry temp = entries[hash];
             if (temp.key.equals(key)) {
                 temp.value = value;
                 return;
             }
-            //si no es el primer elemento pero es uno de los elementos siguientes con la misma clave, se machaca el valor con el ultimo elemento con esa clave puesta
             while (temp.next != null) {
                 if (temp.key.equals(key)) {
                     temp.value = value;
@@ -70,7 +68,6 @@ public class HashTable {
                     temp = temp.next;
                 }
             }
-            //si el elemento actual ya existe en esa clave lo sobreescribimos
             if(temp.key.equals(key)) {
                 temp.value = value;
                 return;
@@ -103,7 +100,7 @@ public class HashTable {
 //    }
 //
 
-    //segon error, si la clau es de un valor major del esperat surt un nullpionterExeption y ho hem de corregir amb un try catch
+    //error 2: Gestion de errores con try catch
     public String get(String key) {
         int hash = getHash(key);
         try {
@@ -134,17 +131,16 @@ public class HashTable {
 //            while( !temp.key.equals(key))
 //                temp = temp.next;
 //
-//            if(temp.prev == null) entries[hash] = null;             //esborrar element únic (no col·lissió)
+//            if(temp.prev == null) entries[hash] = null;
 //            else{
-//                if(temp.next != null) temp.next.prev = temp.prev;   //esborrem temp, per tant actualitzem l'anterior al següent
-//                temp.prev.next = temp.next;                         //esborrem temp, per tant actualitzem el següent de l'anterior
+//                if(temp.next != null) temp.next.prev = temp.prev;
+//                temp.prev.next = temp.next;
 //            }
 //        }
 //    }
 
-    //no decrementa los items al borrarse
+    //error 3: ITEMS--
 
-    //si se borraba el anterior petaba la app
     public void drop(String key) {
         int hash = getHash(key);
         if (entries[hash] != null) {
@@ -171,9 +167,7 @@ public class HashTable {
                 }
                 entries[hash] = temp;
             }
-            //decrementamos items al eliminar un valor
             --ITEMS;
-            //esborrem temp, per tant actualitzem el següent de l'anterior
         }
     }
 

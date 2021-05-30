@@ -16,7 +16,7 @@ public class HashTable {
     private int ITEMS = 0;
     private HashEntry[] entries = new HashEntry[SIZE];
 
-    //por cada elemento incrementamos el valor de los items en put o si borramos decrementamos en drop
+
     public int count() {
         return this.ITEMS;
     }
@@ -49,7 +49,7 @@ public class HashTable {
 //            hashEntry.prev = temp;
 //        }
 //    }
-    //primer error, no incrementa items
+
     public void put(String key, String value) {
         int hash = getHash(key);
         final HashEntry hashEntry = new HashEntry(key, value);
@@ -57,13 +57,11 @@ public class HashTable {
         if (entries[hash] == null) {
             entries[hash] = hashEntry;
         } else {
-            //si hay una colision, miramos el primer elemento, si el primer elemento tine la misma clave, se machaca el valor y se sale del metodo
             HashEntry temp = entries[hash];
             if (temp.key.equals(key)) {
                 temp.value = value;
                 return;
             }
-            //si no es el primer elemento pero es uno de los elementos siguientes con la misma clave, se machaca el valor con el ultimo elemento con esa clave puesta
             while (temp.next != null) {
                 if (temp.key.equals(key)) {
                     temp.value = value;
@@ -72,7 +70,6 @@ public class HashTable {
                     temp = temp.next;
                 }
             }
-            //si el elemento actual ya existe en esa clave lo sobreescribimos
             if(temp.key.equals(key)) {
                 temp.value = value;
                 return;
@@ -106,7 +103,6 @@ public class HashTable {
 //
 
 
-    //segon error, si la clau es de un valor major del esperat surt un nullpionterExeption y ho hem de corregir amb un try catch
     public String get(String key) {
         int hash = getHash(key);
         try {
@@ -138,17 +134,15 @@ public class HashTable {
 //            while( !temp.key.equals(key))
 //                temp = temp.next;
 //
-//            if(temp.prev == null) entries[hash] = null;             //esborrar element únic (no col·lissió)
+//            if(temp.prev == null) entries[hash] = null;
 //            else{
-//                if(temp.next != null) temp.next.prev = temp.prev;   //esborrem temp, per tant actualitzem l'anterior al següent
-//                temp.prev.next = temp.next;                         //esborrem temp, per tant actualitzem el següent de l'anterior
+//                if(temp.next != null) temp.next.prev = temp.prev;
+//                temp.prev.next = temp.next;
 //            }
 //        }
 //    }
 
-    //no decrementa los items al borrarse
 
-    //si se borraba el anterior petaba la app
     public void drop(String key) {
         int hash = getHash(key);
         if (entries[hash] != null) {
@@ -160,14 +154,14 @@ public class HashTable {
             HashEntry temp = find(key, entries[hash]);
 
             if (temp.prev == null && temp.next == null)
-                entries[hash] = null;             //esborrar element únic (no col·lissió)
+                entries[hash] = null;
             else {
                 if (temp.prev == null) {
                     temp = temp.next;
                     temp.prev = null;
                 } else if (temp.next != null) {
                     temp = temp.prev;
-                    temp.next = temp.next.next; //esborrem temp, per tant actualitzem l'anterior al següent
+                    temp.next = temp.next.next;
                 } else { //Error
                     temp = temp.prev.prev;
                     temp.next.next = null;
@@ -175,11 +169,9 @@ public class HashTable {
                 entries[hash] = temp;
             }
             --ITEMS;
-            //esborrem temp, per tant actualitzem el següent de l'anterior
         }
     }
 
-    //extraemos este metodo que se repite tanto en put como drop y sirve para buscar el elemento con la key esperada
     private HashEntry find(String key, HashEntry entry) {
         HashEntry temp = entry;
         while (!temp.key.equals(key))

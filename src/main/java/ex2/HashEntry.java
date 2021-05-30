@@ -1,6 +1,5 @@
 package ex2;
 
-//Con la extracción de metodos me permite hacer test de manera unitaria y poder reutilizar esta clase en otras, me da mas felixibilidad
 public class HashEntry {
     String key;
     String value;
